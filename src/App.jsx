@@ -5,16 +5,16 @@ import Nav from './components/Nav';
 
 const App = () => {
   return (
-    <>
-      <header className="h-screen bg-slate-900">
+    <div className="flex flex-col items-center bg-slate-900">
+      <header className="h-screen border border-purple-500">
         <Nav />
-        <Hero />
         <HeroInfo />
+        <Hero />
       </header>
       <main>
         <About />
       </main>
-    </>
+    </div>
   );
 };
 

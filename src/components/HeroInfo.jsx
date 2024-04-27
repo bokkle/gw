@@ -1,18 +1,22 @@
-import HeartButton from './HeartButton';
-
 const HeroInfo = () => {
   return (
-    <div className="flex-1 flex-col justify-center border border-green-500">
-      <p className="text-2xl text-white">
-        Goth waifus exude an enchanting allure with their dark aesthetic,
-        blending elegance with an enigmatic charm that captivates the hearts of
-        many
-      </p>
-      <div className="flex justify-center gap-8 border flex-wrap">
-        <HeartButton>chart</HeartButton>
-        <HeartButton>twitter</HeartButton>
-        <HeartButton>telegram</HeartButton>
-      </div>
+    <div
+      className="mb-12 flex-1 flex-col justify-center border p-2 
+    text-center"
+    >
+      <h1
+        className="text-4xl text-white 
+      md:text-7xl"
+      >
+        Discover the mysterious <br /> allure of{' '}
+        <span
+          className="font-mystery-quest text-gradient capitalize 
+        tracking-wide"
+        >
+          {' '}
+          goth waifus
+        </span>
+      </h1>
     </div>
   );
 };

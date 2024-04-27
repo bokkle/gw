@@ -1,12 +1,20 @@
+import { useState } from 'react';
+import { HiBars3BottomRight } from 'react-icons/hi2';
+import MobileNav from './MobileNav';
+
 const Nav = () => {
   const menuItems = ['about', 'roadmap', 'tokenomics'];
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <div className="mb-12 flex h-20 justify-center border-b border-b-slate-800">
-      <nav className="flex w-full max-w-7xl items-center justify-between px-8">
+    <div
+      className="mb-12 flex h-20 w-dvw max-w-screen-2xl 
+    justify-center border-b border-b-slate-800"
+    >
+      <nav className="flex w-full items-center justify-between px-4">
         <h1
-          className="cursor-pointer text-4xl font-bold uppercase tracking-wide 
-      text-slate-100"
+          className="cursor-pointer text-4xl font-bold uppercase 
+          tracking-wide text-slate-100"
         >
           Goth Waifu
         </h1>
@@ -20,6 +28,13 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        <button onClick={() => setMobileMenu(!mobileMenu)}>
+          <HiBars3BottomRight
+            className="text-4xl text-white 
+        md:text-5xl lg:hidden"
+          />
+        </button>
+        {/* <MobileNav menuItems={menuItems} /> */}
       </nav>
     </div>
   );

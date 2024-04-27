@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* text gradient  */
+
+.text-gradient {
+  background: linear-gradient(45deg, #ff12f7, #47d1ff, #a72cff);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* Vendor-prefixed property */
+  color: transparent;
+}
 
 /* heart button  */
 
