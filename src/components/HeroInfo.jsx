@@ -10,7 +10,7 @@ const HeroInfo = () => {
       >
         Discover the mysterious <br /> allure of{' '}
         <span
-          className="font-mystery-quest text-gradient capitalize 
+          className="text-gradient font-mystery-quest capitalize 
         tracking-wide"
         >
           {' '}
