@@ -13,6 +13,18 @@
   color: transparent;
 }
 
+/* box shadow  */
+.gothshadow {
+  box-shadow: 0 0 10px white;
+}
+
+.gothshadow:hover {
+  box-shadow:
+    10px 10px 20px rgb(255, 131, 238),
+    -10px -10px 20px rgb(60, 193, 255),
+    inset 0px 0px 50px rgba(128, 0, 128, 0.5);
+}
+
 /* heart button  */
 
 .hearts {
