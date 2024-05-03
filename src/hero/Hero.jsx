@@ -3,7 +3,7 @@ import HeroImage from './HeroImage';
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-slate-900 px-2 text-white pt-32">
+    <div className="h-auto bg-slate-900 px-2 pt-32 text-white lg:h-screen">
       <Heading />
       <HeroImage />
     </div>

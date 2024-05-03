@@ -20,23 +20,25 @@ const AboutButtons = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center border border-green-400">
-      <h3>Find it on</h3>
+    <div className="flex flex-col items-center p-6">
       <div
-        className="flex w-2/3 flex-col justify-evenly gap-6 border 
+        className="flex w-2/3 flex-col items-center justify-evenly gap-8 
         lg:flex-row"
       >
         {buttonInfo.map((info) => (
           <button
             key={info.name}
             className="h-[65px] w-[200px] rounded-xl border
-          border-purple-400 p-3 transition-all hover:scale-105"
+          border-purple-400 p-3 ring ring-purple-300
+          transition-all hover:scale-105 focus:outline-none 
+          focus:ring focus:ring-purple-500 active:scale-95 
+          active:ring active:ring-purple-500"
           >
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center">
               <img src={info.logo} width={40} height={40} alt={info.alt} />
               <p
-                className="text-lg font-semibold uppercase 
-              tracking-wide"
+                className="ml-2 text-lg font-semibold 
+              uppercase tracking-wide"
               >
                 {info.name}
               </p>
