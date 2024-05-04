@@ -1,10 +1,10 @@
 import { Tilt } from 'react-tilt';
 import gothwaifu from '../assets/gothwaifu.jpg';
-import catwaifu from '../assets/ttwaifu-nowm.gif';
+import gothwaifu2 from '../assets/ttwaifu.gif';
 import shegowaifu from '../assets/gothwaifushego.jpg';
 
 const HeroImage = () => {
-  const waifus = [gothwaifu, catwaifu, shegowaifu];
+  const waifus = [gothwaifu, gothwaifu2, shegowaifu];
   return (
     <div className="flex flex-1 justify-center gap-12 p-2">
       {waifus.map((waifu, i) => (
