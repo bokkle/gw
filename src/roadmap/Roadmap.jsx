@@ -37,6 +37,27 @@ const Roadmap = () => {
       iconBg: '#6948a2',
       points: ['Lambos and goth waifus await...'],
     },
+    {
+      title: 'Free NFTs to top holders',
+      date: 'Q3 2024',
+      icon: '🎁',
+      iconBg: '#6948a2',
+      points: [
+        'Goth Waifu NFT collection sent to top 1000 holders',
+        'Limit one per wallet',
+      ],
+    },
+    {
+      title: 'Goth Waifu game launch',
+      date: 'TBA',
+      icon: '🕹',
+      iconBg: '#6948a2',
+      points: [
+        'Web based',
+        '2D Streetfighter style',
+        'Play as your Goth Waifu NFT, or a generic character',
+      ],
+    },
   ];
   return (
     <div className="flex justify-center">
