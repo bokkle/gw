@@ -3,7 +3,10 @@ import HeroImage from './HeroImage';
 
 const Hero = () => {
   return (
-    <div className="h-auto bg-slate-900 px-2 pt-32 text-white lg:h-screen">
+    <div
+      className="min-h-screen overflow-hidden border border-red-500 
+    bg-slate-900 px-2 pt-32 text-white"
+    >
       <Heading />
       <HeroImage />
     </div>
@@ -11,3 +14,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// lg:h-screen h-auto
