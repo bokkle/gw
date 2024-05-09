@@ -21,6 +21,7 @@ const ContactAddress = () => {
       });
     }
   };
+  //:)
 
   return (
     <div className="mt-6 flex justify-center">
@@ -34,7 +35,7 @@ const ContactAddress = () => {
       >
         <h3
           className="flex items-center text-2xl font-semibold
-        tracking-wide md:text-3xl"
+        tracking-wide md:text-2xl"
         >
           CA:
           <span className="ml-2 hidden md:inline-block">

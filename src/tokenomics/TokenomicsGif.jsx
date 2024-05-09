@@ -3,10 +3,7 @@ import gothwaifuleather from '../assets/gothwaifuleather.gif';
 
 const TokenomicsGif = () => {
   return (
-    <div
-      className="flex min-w-[300px] flex-1 items-center justify-center 
-      border border-red-800 p-2"
-    >
+    <div className="flex h-full min-w-[300px] flex-1 items-center justify-center p-2">
       <Tilt className="z-1" options={{ scale: 1 }}>
         <div
           className={`h-[550px] overflow-hidden rounded-xl

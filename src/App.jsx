@@ -5,6 +5,7 @@ import Tokenomics from './tokenomics/Tokenomics';
 import Footer from './footer/Footer';
 import Navigation from './nav/Navigation';
 import { Toaster } from 'react-hot-toast';
+import CTA from './CTA/CTA';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Roadmap />
       <Tokenomics />
+      <CTA />
       <Footer />
     </div>
   );
