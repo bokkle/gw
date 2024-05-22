@@ -3,10 +3,10 @@ import HeroImage from './HeroImage';
 
 const Hero = () => {
   return (
-    <div className="flex h-full justify-center border border-yellow-500">
+    <div className="herobg flex h-full justify-center">
       <div
-        className="flex min-h-screen max-w-[120rem] flex-col gap-10 border 
-     border-red-500 px-2 lg:flex-row"
+        className="mt-20 flex min-h-screen w-screen flex-col border 
+      px-2 md:mx-12 lg:flex-row"
       >
         <Heading />
         <HeroImage />
@@ -17,4 +17,4 @@ const Hero = () => {
 
 export default Hero;
 
-// lg:h-screen h-auto
+// lg:h-screen h-auto max-w-[120rem]

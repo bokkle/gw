@@ -24,43 +24,27 @@ const Roadmap = () => {
       ],
     },
     {
-      title: 'Launch project',
+      title: 'Launch coin',
       date: 'May 2024',
       icon: '🚀',
       iconBg: '#6948a2',
       points: ['Fair launch on Solana network'],
     },
     {
-      title: 'Land on the moon',
-      date: 'Ongoing',
-      icon: '🌙',
-      iconBg: '#6948a2',
-      points: ['Lambos and goth waifus await...'],
-    },
-    {
-      title: 'Free NFTs to top holders',
+      title: 'Launch web application',
       date: 'Q3 2024',
-      icon: '🎁',
-      iconBg: '#6948a2',
-      points: [
-        'Goth Waifu NFT collection sent to top 1000 holders',
-        'Limit one per wallet',
-      ],
-    },
-    {
-      title: 'Goth Waifu game launch',
-      date: 'TBA',
       icon: '🕹',
       iconBg: '#6948a2',
       points: [
-        'Web based',
-        '2D Streetfighter style',
-        'Play as your Goth Waifu NFT, or a generic character',
+        'Fully interactive Goth Waifu AI companion',
+        "Use $GWIFE to upgrade & customize your waifu's appearance, animations & more",
+        'Waifu adapts to your conversational preferences',
+        'Capable of text to image, text to video, & more',
       ],
     },
   ];
   return (
-    <div className="flex justify-center">
+    <div className="mt-12 flex justify-center">
       <VerticalTimeline>
         {roadmapInfo.map((info) => (
           <VerticalTimelineElement

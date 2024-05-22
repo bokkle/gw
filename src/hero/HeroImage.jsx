@@ -8,7 +8,7 @@ const HeroImage = () => {
   // const waifus = [gothwaifu, gothwaifu2, shegowaifu];
   const waifus = [gothwaifu2];
   return (
-    <div className="mt-6 flex flex-1 justify-center border border-green-500 p-2">
+    <div className="mt-6 flex flex-1 justify-center p-2 lg:items-center">
       {waifus.map((waifu) => (
         <Tilt className="z-1" key={waifu} options={{ scale: 1 }}>
           <div

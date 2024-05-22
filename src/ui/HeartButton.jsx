@@ -1,6 +1,6 @@
 const HeartButton = ({ children }) => {
   return (
-    <button className="hearts md:scale-[200%]">
+    <button className="hearts">
       {children}
       <div className="star-1">
         <svg
