@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         'mystery-quest': ['Mystery Quest', 'system-ui'],
       },
+      animation: {
+        'spin-slow': 'spin 7s linear infinite',
+      },
     },
   },
   plugins: [],
