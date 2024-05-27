@@ -48,7 +48,7 @@ const Tokenomics = () => {
   ];
 
   return (
-    <section className="mt-12 flex justify-center">
+    <section className="mt-24 flex justify-center">
       <div className="flex w-full max-w-7xl flex-wrap-reverse">
         <div
           className="grid min-w-[300px] flex-1 grid-cols-2 grid-rows-2 gap-4 

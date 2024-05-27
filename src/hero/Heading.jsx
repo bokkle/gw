@@ -2,7 +2,7 @@ const Heading = () => {
   return (
     <div
       className="flex flex-col  items-center justify-center 
-      border text-slate-100 lg:flex-1"
+       text-slate-100 lg:flex-1"
     >
       <h1 className="text-center text-5xl capitalize drop-shadow-md md:text-7xl lg:text-8xl">
         Artificial intelligence meets

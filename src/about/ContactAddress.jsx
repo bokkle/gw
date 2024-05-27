@@ -1,6 +1,4 @@
-import { HiOutlineClipboardDocument } from 'react-icons/hi2';
 import toast from 'react-hot-toast';
-import HeartButton from '../ui/HeartButton';
 
 const ContactAddress = () => {
   const CA = '0x532f27101965dd16442E59d40670FaF5eBB142E4';
@@ -24,31 +22,30 @@ const ContactAddress = () => {
   };
 
   return (
-    <div className="relative h-[100px] max-w-7xl border rounded-xl">
+    <div
+      onClick={() => copyToClipboard(CA)}
+      className="relative h-[100px] max-w-7xl cursor-pointer overflow-hidden rounded-xl"
+    >
       <div
         className="animate-spin-slow absolute inset-0 flex h-full 
       items-center justify-center rounded-xl bg-transparent"
       >
-        <div className="w-screen bg-purple-600">.</div>
-        {/* <div className="w-1/3"></div> */}
-        <div className="w-screen bg-cyan-400">.</div>
+        <div className="w-screen bg-purple-600 text-purple-600">.</div>
+        <div className="w-screen bg-cyan-400 text-cyan-400">.</div>
       </div>
       <div
         className="absolute inset-2 z-10 flex items-center justify-center 
-        rounded-lg border bg-transparent"
+        rounded-lg"
       >
-        <h3 className="border text-sm">
-          CA:
-          <span>0x532f27101965dd16442E59d40670FaF5eBB142E4</span>
+        <h3 className="">
+          <span className="text-gradient text-sm md:text-2xl lg:text-5xl">
+            Hqj5GRGb7gJV6MX8qrskHj7AQLPXfYmS8Qi8SPoMZwyn
+          </span>
         </h3>
       </div>
-      <div className="absolute border border-red-400 bottom-1 left-1 right-1 top-1 bg-slate-900 rounded-lg"></div>
+      <div className="absolute bottom-2 left-2 right-2 top-2 rounded-lg bg-slate-900"></div>
     </div>
   );
 };
 
 export default ContactAddress;
-
-/* <div onClick={() => copyToClipboard(CA)}>
-        <HeartButton>Copy CA</HeartButton>
-      </div> */
