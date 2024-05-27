@@ -1,11 +1,11 @@
 import toast from 'react-hot-toast';
 
 const ContactAddress = () => {
-  const CA = '0x532f27101965dd16442E59d40670FaF5eBB142E4';
+  const CA = 'Hqj5GRGb7gJV6MX8qrskHj7AQLPXfYmS8Qi8SPoMZwyn';
   const copyToClipboard = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success('Copied to clipboard', {
+      toast.success('Address copied', {
         style: {
           fontSize: '22px',
           marginTop: '50px',
