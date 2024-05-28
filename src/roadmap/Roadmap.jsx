@@ -44,7 +44,7 @@ const Roadmap = () => {
     },
   ];
   return (
-    <div className="mt-24">
+    <div id='roadmap' className="mt-24">
       <div className="flex justify-center">
         <VerticalTimeline>
           {roadmapInfo.map((info) => (

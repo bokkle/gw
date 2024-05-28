@@ -10,7 +10,7 @@ const NavLinks = () => {
             tracking-wide transition-all hover:text-pink-400"
             key={link}
           >
-            {link}
+            <a href={`#${link}`}>{link}</a>
           </li>
         ))}
       </ul>

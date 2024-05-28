@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* hero bg  */
 
 .herobg {
