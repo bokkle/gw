@@ -10,14 +10,14 @@ const Roadmap = () => {
       title: 'Start development',
       date: 'Jan 2024',
       icon: '👨🏻‍💻',
-      iconBg: '#6948a2',
-      points: ['Development team begins bringing Goth Waifus to life'],
+      iconBg: '#7e34ff',
+      points: ['Development team begins bringing Thursday to life'],
     },
     {
       title: 'Marketing',
       date: 'Feb 2024',
       icon: '📺',
-      iconBg: '#6948a2',
+      iconBg: '#7e34ff',
       points: [
         'Marketing team begins advertisement campaign',
         'Twitter, Telegram, Etc are created',
@@ -25,27 +25,26 @@ const Roadmap = () => {
     },
     {
       title: 'Launch coin',
-      date: 'May 2024',
+      date: 'June 2024',
       icon: '🚀',
-      iconBg: '#6948a2',
+      iconBg: '#7e34ff',
       points: ['Fair launch on Solana network'],
     },
     {
-      title: 'Launch web application',
-      date: 'Q3 2024',
-      icon: '🕹',
-      iconBg: '#6948a2',
+      title: 'Moon landing',
+      date: 'Ongoing',
+      icon: '🌑',
+      iconBg: '#7e34ff',
       points: [
-        'Fully interactive Goth Waifu AI companion',
-        "Use $GWIFE to upgrade & customize your waifu's appearance, animations & more",
-        'Waifu adapts to your conversational preferences',
-        'Capable of text to image, text to video, & more',
+        'Thursday claims her seat at the throne, the true queen of Solana',
+        'History is made, the first time a Goth Waifu visits the moon',
+        'Top 1000 holders recieve free Goth Waifu NFT, at $100M market cap',
       ],
     },
   ];
   return (
-    <div id='roadmap' className="mt-24">
-      <div className="flex justify-center">
+    <div id="roadmap" className="border-t border-transparent">
+      <div className="mt-24 flex justify-center">
         <VerticalTimeline>
           {roadmapInfo.map((info) => (
             <VerticalTimelineElement
