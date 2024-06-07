@@ -36,9 +36,7 @@ const Roadmap = () => {
       icon: '🌑',
       iconBg: '#7e34ff',
       points: [
-        'Thursday claims her seat at the throne, the true queen of Solana',
-        'History is made, the first time a Goth Waifu visits the moon',
-        'Top 1000 holders recieve free Goth Waifu NFT, at $100M market cap',
+        'Thursday claims her seat on the throne, the true queen of Solana',
       ],
     },
   ];
