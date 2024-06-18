@@ -15,7 +15,7 @@ const Nav = ({ onToggleMobileMenu }) => {
           className="cursor-pointer text-2xl font-bold uppercase tracking-wide
         lg:text-4xl"
         >
-          Goth Waifu
+          <a href={`#home`}>Thursday</a>
         </h1>
         <NavLinks />
         <button

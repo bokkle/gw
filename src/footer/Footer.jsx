@@ -13,11 +13,10 @@ const Footer = () => {
         <FaTwitter className="cursor-pointer hover:text-[#1DA1F2] active:scale-95" />
       </div>
       <p className="text-center tracking-wide text-slate-300">
-        All Rights Reserved &copy; {new Date().getFullYear()} Goth Waifu
+        All Rights Reserved &copy; {new Date().getFullYear()} Thursday 
       </p>
     </footer>
   );
 };
 
 export default Footer;
-// :) :)

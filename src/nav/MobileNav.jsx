@@ -17,9 +17,9 @@ const MobileNav = ({ onToggleMobileMenu }) => {
         gap-40"
         >
           {links.map((link) => (
-            <li className="text-4xl uppercase text-slate-100" key={link}>
-              {link}
-            </li>
+            <a href={`#${link}`} key={link} onClick={onToggleMobileMenu}>
+              <li className="text-4xl uppercase text-slate-100">{link}</li>
+            </a>
           ))}
         </ul>
       </nav>

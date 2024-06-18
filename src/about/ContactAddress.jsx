@@ -1,4 +1,5 @@
 import toast from 'react-hot-toast';
+import { BiCopy } from 'react-icons/bi';
 
 const ContactAddress = () => {
   const CA = 'Hqj5GRGb7gJV6MX8qrskHj7AQLPXfYmS8Qi8SPoMZwyn';
@@ -27,7 +28,7 @@ const ContactAddress = () => {
       className="relative h-[100px] max-w-7xl cursor-pointer overflow-hidden rounded-xl"
     >
       <div
-        className="animate-spin-slow absolute inset-0 flex h-full 
+        className="absolute inset-0 flex h-full animate-spin-slow 
       items-center justify-center rounded-xl bg-transparent"
       >
         <div className="w-screen bg-purple-600 text-purple-600">.</div>
@@ -37,9 +38,12 @@ const ContactAddress = () => {
         className="absolute inset-2 z-10 flex items-center justify-center 
         rounded-lg"
       >
-        <h3 className="">
-          <span className="text-gradient text-sm md:text-2xl lg:text-5xl">
+        <h3 className="flex items-center p-2">
+          <span className="text-gradient p-2 text-sm md:text-2xl lg:text-4xl">
             Hqj5GRGb7gJV6MX8qrskHj7AQLPXfYmS8Qi8SPoMZwyn
+          </span>
+          <span className="ml-3 hidden text-4xl text-orange-300 lg:block">
+            <BiCopy />
           </span>
         </h3>
       </div>

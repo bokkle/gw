@@ -2,6 +2,7 @@ import TokenomicsGif from './TokenomicsGif';
 import { RiCoinsLine } from 'react-icons/ri';
 import { HiFire, HiShieldCheck } from 'react-icons/hi';
 import { IoPricetags } from 'react-icons/io5';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 const TokenomicsCard = ({ title, info, icon }) => {
   return (
@@ -37,7 +38,7 @@ const Tokenomics = () => {
     },
     {
       title: 'Liquidity Provider',
-      info: '100% LP burnt',
+      info: '100% burnt',
       icon: HiFire,
     },
     {
@@ -49,25 +50,26 @@ const Tokenomics = () => {
 
   return (
     <section id="tokenomics" className="mt-24 flex justify-center">
-      <div className="flex w-full max-w-7xl flex-wrap-reverse">
-        <div
-          className="grid min-w-[300px] flex-1 grid-cols-2 grid-rows-2 gap-4 
+      <Fade fraction={0.1} duration={3000}>
+        <div className="flex w-screen max-w-7xl flex-wrap-reverse justify-between">
+          <div
+            className="grid min-w-[300px] flex-1 grid-cols-2 grid-rows-2 gap-4 
           p-2"
-        >
-          {tokenomicsItems.map((item) => (
-            <TokenomicsCard
-              title={item.title}
-              info={item.info}
-              icon={item.icon}
-              key={item.title}
-            />
-          ))}
+          >
+            {tokenomicsItems.map((item) => (
+              <TokenomicsCard
+                title={item.title}
+                info={item.info}
+                icon={item.icon}
+                key={item.title}
+              />
+            ))}
+          </div>
+          <div className="flex-1">
+            <TokenomicsGif />
+          </div>
         </div>
-
-        <div className="flex-1">
-          <TokenomicsGif />
-        </div>
-      </div>
+      </Fade>
     </section>
   );
 };

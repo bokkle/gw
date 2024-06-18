@@ -6,10 +6,11 @@ const Hero = () => {
     <div
       className="herobg flex h-full justify-center border-b 
     border-purple-400"
+      id="home"
     >
       <div
         className="mt-20 flex min-h-screen w-screen flex-col 
-      px-2 md:mx-12 lg:flex-row"
+       md:mx-12 lg:flex-row lg:px-36"
       >
         <Heading />
         <HeroImage />
